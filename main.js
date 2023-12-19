@@ -16,6 +16,8 @@ function animate() {
     bird.update();
     bird.draw();
     angle += 0.1;
+    hue += 1;
+    handleParticles();
     requestAnimationFrame(animate);
 }
 animate();
