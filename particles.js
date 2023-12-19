@@ -24,12 +24,12 @@ class Particle {
 
 function handleParticles() {
     particle_array.unshift(new Particle());
-    for (i = 0; i < particle_array.length; i++) {
+    for (let i = 0; i < particle_array.length; i++) {
         particle_array[i].update();
         particle_array[i].draw();
     }
     if (particle_array.length > 200) {
-        for (i = 0; i < 20; i++) {
+        for (let i = 0; i < 20; i++) {
             particle_array.pop(particle_array[i]);
         }
     }
